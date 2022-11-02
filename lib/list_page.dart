@@ -30,6 +30,7 @@ class _ListPageState extends State<ListPage> {
 
   getListView() {
     if (this.transactionStatus == "") {
+      // hint_show_webservice_result_on_list    
       return ListView.builder(
         itemCount: data.length,
         itemBuilder: (BuildContext context, int index) {
@@ -37,9 +38,11 @@ class _ListPageState extends State<ListPage> {
             child: Column(
               children: [
                 Text(data[index]["title"].toString()),
+                //hint_button_on_list
                 RaisedButton(
                   child: Text("info"),
                   onPressed: () {
+                    // hint_show_detail_item_on_alert
                     showAlert(context, data[index]["id"].toString() + "-" + data[index]["title"]);
                   },
                 ),
@@ -56,8 +59,10 @@ class _ListPageState extends State<ListPage> {
   }
 
   inquiryProgress() async {
+    // hint_show_loading_indicator
     transactionStatus = "loading ...";
     setState(() {});
+    // hint_loading_webservice
     var result = await http
         .get(Uri.parse('https://jsonplaceholder.typicode.com/albums'));
     data = json.decode(result.body);
