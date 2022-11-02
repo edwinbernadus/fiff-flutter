@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'list_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -101,6 +103,15 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
+            ),
+            // hint_create_button
+            RaisedButton(
+              child: Text("go to next page"),
+              onPressed: () {
+                // hint_open_new_page
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ListPage()));
+              },
             ),
           ],
         ),

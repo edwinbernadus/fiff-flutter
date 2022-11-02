@@ -1,16 +1,73 @@
-# fiff_flutter
-
-A new Flutter project.
+# First Interfaction Frontend Framework (FIFF) - Flutter
 
 ## Getting Started
+https://github.com/edwinbernadus/first-interaction-frontend-framework
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Snippet List
+- hint_create_button
+````dart
+// hint_create_button
+RaisedButton(
+    child: Text("go to next page"),
+    onPressed: () {
+        print("input something here");
+    },
+),
+````
+- hint_open_new_page
+````dart
+// hint_open_new_page
+Navigator.push(context,
+    MaterialPageRoute(builder: (context) => ListPage()));
+````
+- hint_loading_webservice
+````dart
+// hint_create_button
+RaisedButton(
+    child: Text("go to next page"),
+    onPressed: () {
+        print("input something here");
+    },
+),
+````
+- hint_show_loading_indicator
+````dart
+// hint_create_button
+RaisedButton(
+    child: Text("go to next page"),
+    onPressed: () {
+        print("input something here");
+    },
+),
+````
+- hint_show_webservice_result_on_list
+````dart
+// hint_create_button
+RaisedButton(
+    child: Text("go to next page"),
+    onPressed: () {
+        print("input something here");
+    },
+),
+````
+- hint_button_on_list
+````dart
+// hint_create_button
+RaisedButton(
+    child: Text("go to next page"),
+    onPressed: () {
+        print("input something here");
+    },
+),
+````
+- hint_show_detail_item_on_alert
+````dart
+// hint_create_button
+RaisedButton(
+    child: Text("go to next page"),
+    onPressed: () {
+        print("input something here");
+    },
+),
+````
