@@ -1,7 +1,8 @@
-# First Interfaction Frontend Framework (FIFF) - Flutter
+# starter-template-flutter
 
 ## Getting Started
-https://github.com/edwinbernadus/first-interaction-frontend-framework
+** read this first **  
+https://github.com/edwinbernadus/starter-template-frontend-framework
 
 
 ## Snippet List
